@@ -1,0 +1,583 @@
+{
+  "validation": {
+    "status": "valid",
+    "file_path": "C:\\Users\\anits\\Pictures\\banking fraud detection\\ml-service\\data\\raw\\creditcard.csv",
+    "raw_rows": 284807,
+    "duplicate_rows_dropped": 1081,
+    "duplicate_pct": 0.3796,
+    "clean_rows": 283726,
+    "total_nulls": 0,
+    "columns_count": 31,
+    "legit_count": 283253,
+    "fraud_count": 473,
+    "fraud_percentage": 0.1667,
+    "data_types": {
+      "Time": "float64",
+      "V1": "float64",
+      "V2": "float64",
+      "V3": "float64",
+      "V4": "float64",
+      "V5": "float64",
+      "V6": "float64",
+      "V7": "float64",
+      "V8": "float64",
+      "V9": "float64",
+      "V10": "float64",
+      "V11": "float64",
+      "V12": "float64",
+      "V13": "float64",
+      "V14": "float64",
+      "V15": "float64",
+      "V16": "float64",
+      "V17": "float64",
+      "V18": "float64",
+      "V19": "float64",
+      "V20": "float64",
+      "V21": "float64",
+      "V22": "float64",
+      "V23": "float64",
+      "V24": "float64",
+      "V25": "float64",
+      "V26": "float64",
+      "V27": "float64",
+      "V28": "float64",
+      "Amount": "float64",
+      "Class": "int64"
+    }
+  },
+  "splits": {
+    "train": {
+      "total": 198608,
+      "legit": 198277,
+      "fraud": 331,
+      "fraud_rate": 0.1667
+    },
+    "validation": {
+      "total": 42559,
+      "legit": 42488,
+      "fraud": 71,
+      "fraud_rate": 0.1668
+    },
+    "test": {
+      "total": 42559,
+      "legit": 42488,
+      "fraud": 71,
+      "fraud_rate": 0.1668
+    }
+  },
+  "amount_statistics": {
+    "overall": {
+      "count": 283726,
+      "mean": 88.47,
+      "std": 250.4,
+      "min": 0.0,
+      "p25": 5.6,
+      "median": 22.0,
+      "p75": 77.51,
+      "p90": 203.38,
+      "p99": 1018.97,
+      "p99_9": 3004.75,
+      "max": 25691.16
+    },
+    "legit": {
+      "count": 283253,
+      "mean": 88.41,
+      "std": 250.38,
+      "min": 0.0,
+      "p25": 5.67,
+      "median": 22.0,
+      "p75": 77.46,
+      "p90": 203.0,
+      "p99": 1018.06,
+      "p99_9": 3012.93,
+      "max": 25691.16
+    },
+    "fraud": {
+      "count": 473,
+      "mean": 123.87,
+      "std": 260.21,
+      "min": 0.0,
+      "p25": 1.0,
+      "median": 9.82,
+      "p75": 105.89,
+      "p90": 348.65,
+      "p99": 1364.14,
+      "p99_9": 1976.63,
+      "max": 2125.87
+    }
+  },
+  "time_statistics": {
+    "overall": {
+      "count": 283726,
+      "mean": 94811.08,
+      "std": 47481.05,
+      "min": 0.0,
+      "p25": 54204.75,
+      "median": 84692.5,
+      "p75": 139298.0,
+      "p90": 157631.0,
+      "p99": 170557.75,
+      "p99_9": 172523.28,
+      "max": 172792.0
+    },
+    "span_hours": 48.0
+  },
+  "amount_distributions": {
+    "log_bins_overall": [
+      {
+        "bin_start": 0.01,
+        "bin_end": 0.02,
+        "bin_label": "$0.0 - $0.0",
+        "count": 718
+      },
+      {
+        "bin_start": 0.02,
+        "bin_end": 0.03,
+        "bin_label": "$0.0 - $0.0",
+        "count": 85
+      },
+      {
+        "bin_start": 0.03,
+        "bin_end": 0.04,
+        "bin_label": "$0.0 - $0.0",
+        "count": 14
+      },
+      {
+        "bin_start": 0.04,
+        "bin_end": 0.07,
+        "bin_label": "$0.0 - $0.1",
+        "count": 58
+      },
+      {
+        "bin_start": 0.07,
+        "bin_end": 0.12,
+        "bin_label": "$0.1 - $0.1",
+        "count": 69
+      },
+      {
+        "bin_start": 0.12,
+        "bin_end": 0.19,
+        "bin_label": "$0.1 - $0.2",
+        "count": 277
+      },
+      {
+        "bin_start": 0.19,
+        "bin_end": 0.31,
+        "bin_label": "$0.2 - $0.3",
+        "count": 162
+      },
+      {
+        "bin_start": 0.31,
+        "bin_end": 0.51,
+        "bin_label": "$0.3 - $0.5",
+        "count": 236
+      },
+      {
+        "bin_start": 0.51,
+        "bin_end": 0.84,
+        "bin_label": "$0.5 - $0.8",
+        "count": 5509
+      },
+      {
+        "bin_start": 0.84,
+        "bin_end": 1.37,
+        "bin_label": "$0.8 - $1.4",
+        "count": 25192
+      },
+      {
+        "bin_start": 1.37,
+        "bin_end": 2.24,
+        "bin_label": "$1.4 - $2.2",
+        "count": 14609
+      },
+      {
+        "bin_start": 2.24,
+        "bin_end": 3.66,
+        "bin_label": "$2.2 - $3.7",
+        "count": 9037
+      },
+      {
+        "bin_start": 3.66,
+        "bin_end": 5.99,
+        "bin_label": "$3.7 - $6.0",
+        "count": 15032
+      },
+      {
+        "bin_start": 5.99,
+        "bin_end": 9.8,
+        "bin_label": "$6.0 - $9.8",
+        "count": 17954
+      },
+      {
+        "bin_start": 9.8,
+        "bin_end": 16.03,
+        "bin_label": "$9.8 - $16.0",
+        "count": 35258
+      },
+      {
+        "bin_start": 16.03,
+        "bin_end": 26.22,
+        "bin_label": "$16.0 - $26.2",
+        "count": 25234
+      },
+      {
+        "bin_start": 26.22,
+        "bin_end": 42.88,
+        "bin_label": "$26.2 - $42.9",
+        "count": 28003
+      },
+      {
+        "bin_start": 42.88,
+        "bin_end": 70.12,
+        "bin_label": "$42.9 - $70.1",
+        "count": 28593
+      },
+      {
+        "bin_start": 70.12,
+        "bin_end": 114.69,
+        "bin_label": "$70.1 - $114.7",
+        "count": 24879
+      },
+      {
+        "bin_start": 114.69,
+        "bin_end": 187.58,
+        "bin_label": "$114.7 - $187.6",
+        "count": 19618
+      },
+      {
+        "bin_start": 187.58,
+        "bin_end": 306.8,
+        "bin_label": "$187.6 - $306.8",
+        "count": 13821
+      },
+      {
+        "bin_start": 306.8,
+        "bin_end": 501.77,
+        "bin_label": "$306.8 - $501.8",
+        "count": 8492
+      },
+      {
+        "bin_start": 501.77,
+        "bin_end": 820.67,
+        "bin_label": "$501.8 - $820.7",
+        "count": 4779
+      },
+      {
+        "bin_start": 820.67,
+        "bin_end": 1342.23,
+        "bin_label": "$820.7 - $1342.2",
+        "count": 2600
+      },
+      {
+        "bin_start": 1342.23,
+        "bin_end": 2195.26,
+        "bin_label": "$1342.2 - $2195.3",
+        "count": 1117
+      },
+      {
+        "bin_start": 2195.26,
+        "bin_end": 3590.43,
+        "bin_label": "$2195.3 - $3590.4",
+        "count": 394
+      },
+      {
+        "bin_start": 3590.43,
+        "bin_end": 5872.26,
+        "bin_label": "$3590.4 - $5872.3",
+        "count": 142
+      },
+      {
+        "bin_start": 5872.26,
+        "bin_end": 9604.28,
+        "bin_label": "$5872.3 - $9604.3",
+        "count": 28
+      },
+      {
+        "bin_start": 9604.28,
+        "bin_end": 15708.12,
+        "bin_label": "$9604.3 - $15708.1",
+        "count": 5
+      },
+      {
+        "bin_start": 15708.12,
+        "bin_end": 25691.16,
+        "bin_label": "$15708.1 - $25691.2",
+        "count": 2
+      }
+    ],
+    "linear_bins_under_500": [
+      {
+        "bin_start": 0.0,
+        "bin_end": 20.0,
+        "bin_label": "$0.0 - $20.0",
+        "count": 136489
+      },
+      {
+        "bin_start": 20.0,
+        "bin_end": 40.0,
+        "bin_label": "$20.0 - $40.0",
+        "count": 39049
+      },
+      {
+        "bin_start": 40.0,
+        "bin_end": 60.0,
+        "bin_label": "$40.0 - $60.0",
+        "count": 23670
+      },
+      {
+        "bin_start": 60.0,
+        "bin_end": 80.0,
+        "bin_label": "$60.0 - $80.0",
+        "count": 15646
+      },
+      {
+        "bin_start": 80.0,
+        "bin_end": 100.0,
+        "bin_label": "$80.0 - $100.0",
+        "count": 11596
+      },
+      {
+        "bin_start": 100.0,
+        "bin_end": 120.0,
+        "bin_label": "$100.0 - $120.0",
+        "count": 8318
+      },
+      {
+        "bin_start": 120.0,
+        "bin_end": 140.0,
+        "bin_label": "$120.0 - $140.0",
+        "count": 6314
+      },
+      {
+        "bin_start": 140.0,
+        "bin_end": 160.0,
+        "bin_label": "$140.0 - $160.0",
+        "count": 5991
+      },
+      {
+        "bin_start": 160.0,
+        "bin_end": 180.0,
+        "bin_label": "$160.0 - $180.0",
+        "count": 4037
+      },
+      {
+        "bin_start": 180.0,
+        "bin_end": 200.0,
+        "bin_label": "$180.0 - $200.0",
+        "count": 3368
+      },
+      {
+        "bin_start": 200.0,
+        "bin_end": 220.0,
+        "bin_label": "$200.0 - $220.0",
+        "count": 3074
+      },
+      {
+        "bin_start": 220.0,
+        "bin_end": 240.0,
+        "bin_label": "$220.0 - $240.0",
+        "count": 2362
+      },
+      {
+        "bin_start": 240.0,
+        "bin_end": 260.0,
+        "bin_label": "$240.0 - $260.0",
+        "count": 2168
+      },
+      {
+        "bin_start": 260.0,
+        "bin_end": 280.0,
+        "bin_label": "$260.0 - $280.0",
+        "count": 1737
+      },
+      {
+        "bin_start": 280.0,
+        "bin_end": 300.0,
+        "bin_label": "$280.0 - $300.0",
+        "count": 1667
+      },
+      {
+        "bin_start": 300.0,
+        "bin_end": 320.0,
+        "bin_label": "$300.0 - $320.0",
+        "count": 1540
+      },
+      {
+        "bin_start": 320.0,
+        "bin_end": 340.0,
+        "bin_label": "$320.0 - $340.0",
+        "count": 1109
+      },
+      {
+        "bin_start": 340.0,
+        "bin_end": 360.0,
+        "bin_label": "$340.0 - $360.0",
+        "count": 1148
+      },
+      {
+        "bin_start": 360.0,
+        "bin_end": 380.0,
+        "bin_label": "$360.0 - $380.0",
+        "count": 922
+      },
+      {
+        "bin_start": 380.0,
+        "bin_end": 400.0,
+        "bin_label": "$380.0 - $400.0",
+        "count": 909
+      },
+      {
+        "bin_start": 400.0,
+        "bin_end": 420.0,
+        "bin_label": "$400.0 - $420.0",
+        "count": 825
+      },
+      {
+        "bin_start": 420.0,
+        "bin_end": 440.0,
+        "bin_label": "$420.0 - $440.0",
+        "count": 665
+      },
+      {
+        "bin_start": 440.0,
+        "bin_end": 460.0,
+        "bin_label": "$440.0 - $460.0",
+        "count": 643
+      },
+      {
+        "bin_start": 460.0,
+        "bin_end": 480.0,
+        "bin_label": "$460.0 - $480.0",
+        "count": 533
+      },
+      {
+        "bin_start": 480.0,
+        "bin_end": 500.0,
+        "bin_label": "$480.0 - $500.0",
+        "count": 837
+      }
+    ],
+    "fraud_amounts": [
+      {
+        "bin_start": 0.0,
+        "bin_end": 106.29,
+        "bin_label": "$0.0 - $106.3",
+        "count": 356
+      },
+      {
+        "bin_start": 106.29,
+        "bin_end": 212.59,
+        "bin_label": "$106.3 - $212.6",
+        "count": 38
+      },
+      {
+        "bin_start": 212.59,
+        "bin_end": 318.88,
+        "bin_label": "$212.6 - $318.9",
+        "count": 23
+      },
+      {
+        "bin_start": 318.88,
+        "bin_end": 425.17,
+        "bin_label": "$318.9 - $425.2",
+        "count": 15
+      },
+      {
+        "bin_start": 425.17,
+        "bin_end": 531.47,
+        "bin_label": "$425.2 - $531.5",
+        "count": 10
+      },
+      {
+        "bin_start": 531.47,
+        "bin_end": 637.76,
+        "bin_label": "$531.5 - $637.8",
+        "count": 6
+      },
+      {
+        "bin_start": 637.76,
+        "bin_end": 744.05,
+        "bin_label": "$637.8 - $744.1",
+        "count": 9
+      },
+      {
+        "bin_start": 744.05,
+        "bin_end": 850.35,
+        "bin_label": "$744.1 - $850.3",
+        "count": 5
+      },
+      {
+        "bin_start": 850.35,
+        "bin_end": 956.64,
+        "bin_label": "$850.3 - $956.6",
+        "count": 1
+      },
+      {
+        "bin_start": 956.64,
+        "bin_end": 1062.93,
+        "bin_label": "$956.6 - $1062.9",
+        "count": 1
+      },
+      {
+        "bin_start": 1062.93,
+        "bin_end": 1169.23,
+        "bin_label": "$1062.9 - $1169.2",
+        "count": 1
+      },
+      {
+        "bin_start": 1169.23,
+        "bin_end": 1275.52,
+        "bin_label": "$1169.2 - $1275.5",
+        "count": 1
+      },
+      {
+        "bin_start": 1275.52,
+        "bin_end": 1381.82,
+        "bin_label": "$1275.5 - $1381.8",
+        "count": 2
+      },
+      {
+        "bin_start": 1381.82,
+        "bin_end": 1488.11,
+        "bin_label": "$1381.8 - $1488.1",
+        "count": 2
+      },
+      {
+        "bin_start": 1488.11,
+        "bin_end": 1594.4,
+        "bin_label": "$1488.1 - $1594.4",
+        "count": 1
+      },
+      {
+        "bin_start": 1594.4,
+        "bin_end": 1700.7,
+        "bin_label": "$1594.4 - $1700.7",
+        "count": 0
+      },
+      {
+        "bin_start": 1700.7,
+        "bin_end": 1806.99,
+        "bin_label": "$1700.7 - $1807.0",
+        "count": 0
+      },
+      {
+        "bin_start": 1806.99,
+        "bin_end": 1913.28,
+        "bin_label": "$1807.0 - $1913.3",
+        "count": 1
+      },
+      {
+        "bin_start": 1913.28,
+        "bin_end": 2019.58,
+        "bin_label": "$1913.3 - $2019.6",
+        "count": 0
+      },
+      {
+        "bin_start": 2019.58,
+        "bin_end": 2125.87,
+        "bin_label": "$2019.6 - $2125.9",
+        "count": 1
+      }
+    ]
+  }
+}

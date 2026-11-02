@@ -1,0 +1,87 @@
+{
+  "percentile": {
+    "strategy": "percentile",
+    "params": {
+      "lower_percentile": 1.0,
+      "upper_percentile": 99.0,
+      "iqr_multiplier": 1.5
+    },
+    "columns": {
+      "Time": {
+        "lower_bound": 2417.07,
+        "upper_bound": 170502.93,
+        "lower_clipped_count": 408,
+        "upper_clipped_count": 443,
+        "total_clipped_count": 851,
+        "clipped_percentage": 1.9996
+      },
+      "Amount": {
+        "lower_bound": 0.12,
+        "upper_bound": 1014.0186,
+        "lower_clipped_count": 396,
+        "upper_clipped_count": 451,
+        "total_clipped_count": 847,
+        "clipped_percentage": 1.9902
+      }
+    }
+  },
+  "iqr": {
+    "strategy": "iqr",
+    "params": {
+      "lower_percentile": 1.0,
+      "upper_percentile": 99.0,
+      "iqr_multiplier": 1.5
+    },
+    "columns": {
+      "Time": {
+        "lower_bound": -73374.0,
+        "upper_bound": 267020.0,
+        "lower_clipped_count": 0,
+        "upper_clipped_count": 0,
+        "total_clipped_count": 0,
+        "clipped_percentage": 0.0
+      },
+      "Amount": {
+        "lower_bound": -102.315,
+        "upper_bound": 185.725,
+        "lower_clipped_count": 0,
+        "upper_clipped_count": 4829,
+        "total_clipped_count": 4829,
+        "clipped_percentage": 11.3466
+      }
+    }
+  },
+  "none": {
+    "strategy": "none",
+    "params": {
+      "lower_percentile": 1.0,
+      "upper_percentile": 99.0,
+      "iqr_multiplier": 1.5
+    },
+    "columns": {
+      "Time": {
+        "lower_bound": null,
+        "upper_bound": null,
+        "lower_clipped_count": 0,
+        "upper_clipped_count": 0,
+        "total_clipped_count": 0,
+        "clipped_percentage": 0.0
+      },
+      "Amount": {
+        "lower_bound": null,
+        "upper_bound": null,
+        "lower_clipped_count": 0,
+        "upper_clipped_count": 0,
+        "total_clipped_count": 0,
+        "clipped_percentage": 0.0
+      }
+    }
+  },
+  "amount_comparison": {
+    "raw_max": 10199.44,
+    "raw_p99": 1060.5,
+    "capped_max": 1014.02,
+    "lower_bound": 0.12,
+    "upper_bound": 1014.02
+  }
+}

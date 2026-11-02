@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Environment
+.env
+.env.local
+
+# Data & large artifacts
+ml-service/data/raw/*.csv
+creditcard.csv
+
+# Build outputs
+client/dist/
+dist/
+.DS_Store
+Thumbs.db
